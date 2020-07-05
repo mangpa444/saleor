@@ -64,7 +64,7 @@ INTERNAL_IPS = get_list(os.environ.get("INTERNAL_IPS", "127.0.0.1"))
 
 DATABASES = {
     "default": dj_database_url.config(
-        default="	postgres://yadlervw:mOYSYrj0mKFRa-xoE0xo5xO9ZxSKdldc@john.db.elephantsql.com:5432/yadlervw", conn_max_age=600
+        default="postgres://yadlervw:mOYSYrj0mKFRa-xoE0xo5xO9ZxSKdldc@john.db.elephantsql.com:5432/yadlervw", conn_max_age=600
     )
 }
 
