@@ -64,7 +64,7 @@ INTERNAL_IPS = get_list(os.environ.get("INTERNAL_IPS", "127.0.0.1"))
 
 DATABASES = {
     "default": dj_database_url.config(
-        default="postgres://mtengjwo:w6IClB5aueMs2K-dPV3xGs7xROeCtkfi@john.db.elephantsql.com:5432/mtengjwo", conn_max_age=600
+        default="	postgres://yadlervw:mOYSYrj0mKFRa-xoE0xo5xO9ZxSKdldc@john.db.elephantsql.com:5432/yadlervw", conn_max_age=600
     )
 }
 
@@ -198,11 +198,11 @@ TEMPLATES = [
 ]
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = os.environ.get("aRSyZAsWwlE0ueRHoJkZxH57")
+SECRET_KEY = 'aRSyZAsWwlE0ueRHoJkZxH57'
 
 if not SECRET_KEY and DEBUG:
     warnings.warn("SECRET_KEY not configured, using a random temporary key.")
-    SECRET_KEY = get_random_secret_key()
+    SECRET_KEY = 'aRSyZAsWwlE0ueRHoJkZxH57'
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
